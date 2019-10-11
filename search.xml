@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>npm镜像源</title>
+      <link href="/2019/10/11/npm/"/>
+      <url>/2019/10/11/npm/</url>
+      
+        <content type="html"><![CDATA[<h5 id="1、国内用户，建议将npm的注册表源设置为国内的镜像，可以大幅提升安装速度，先查看本机地址"><a href="#1、国内用户，建议将npm的注册表源设置为国内的镜像，可以大幅提升安装速度，先查看本机地址" class="headerlink" title="1、国内用户，建议将npm的注册表源设置为国内的镜像，可以大幅提升安装速度，先查看本机地址"></a>1、国内用户，建议将npm的注册表源设置为国内的镜像，可以大幅提升安装速度，先查看本机地址</h5><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> config get registry</code></pre><h5 id="2、国内优秀npm镜像推荐及使用"><a href="#2、国内优秀npm镜像推荐及使用" class="headerlink" title="2、国内优秀npm镜像推荐及使用"></a>2、国内优秀npm镜像推荐及使用</h5><pre class=" language-bash"><code class="language-bash">淘宝npm镜像 ·搜索地址：http://npm.taobao.org/ ·registry地址：http://registry.npm.taobao.org/</code></pre><pre class=" language-bash"><code class="language-bash">cnpmjs镜像 ·搜索地址：http://cnpmjs.org/ ·registry地址：http://r.cnpmjs.org/</code></pre><h5 id="3、永久配置"><a href="#3、永久配置" class="headerlink" title="3、永久配置"></a>3、永久配置</h5><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token keyword">set</span> registry https://registry.npm.taobao.org</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> npm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>liunx安装升级python3.0</title>
+      <link href="/2019/10/11/python/"/>
+      <url>/2019/10/11/python/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1、安装依赖包"><a href="#1、安装依赖包" class="headerlink" title="1、安装依赖包"></a>1、安装依赖包</h2><h5 id="1）首先安装gcc编译器，gcc有些系统版本已经默认安装，通过-gcc-–version-查看，没安装的先安装gcc"><a href="#1）首先安装gcc编译器，gcc有些系统版本已经默认安装，通过-gcc-–version-查看，没安装的先安装gcc" class="headerlink" title="1）首先安装gcc编译器，gcc有些系统版本已经默认安装，通过  gcc –version  查看，没安装的先安装gcc"></a>1）首先安装gcc编译器，gcc有些系统版本已经默认安装，通过  gcc –version  查看，没安装的先安装gcc</h5><pre class=" language-bash"><code class="language-bash">yum -y <span class="token function">install</span> gcc</code></pre><h5 id="2）安装其它依赖包，（注：不要缺少，否则有可能安装python出错，python3-7-0以下的版本可不装-libffi-devel-）"><a href="#2）安装其它依赖包，（注：不要缺少，否则有可能安装python出错，python3-7-0以下的版本可不装-libffi-devel-）" class="headerlink" title="2）安装其它依赖包，（注：不要缺少，否则有可能安装python出错，python3.7.0以下的版本可不装 libffi-devel ）"></a>2）安装其它依赖包，（注：不要缺少，否则有可能安装python出错，python3.7.0以下的版本可不装 libffi-devel ）</h5><pre class=" language-bash"><code class="language-bash">yum -y <span class="token function">install</span> zlib-develbzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel libffi-devel</code></pre><h2 id="2、下载python3-7-3源码，根据需求下载"><a href="#2、下载python3-7-3源码，根据需求下载" class="headerlink" title="2、下载python3.7.3源码，根据需求下载"></a>2、下载python3.7.3源码，根据需求下载</h2><h5 id="1）去python官网下载源码包"><a href="#1）去python官网下载源码包" class="headerlink" title="1）去python官网下载源码包"></a>1）去python官网下载源码包</h5><pre class=" language-bash"><code class="language-bash">https://www.python.org/downloads/release/python-373/</code></pre><h2 id="3、建立一个空文件夹，用于存放python3程序"><a href="#3、建立一个空文件夹，用于存放python3程序" class="headerlink" title="3、建立一个空文件夹，用于存放python3程序"></a>3、建立一个空文件夹，用于存放python3程序</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">mkdir</span> /usr/local/python3</code></pre><h2 id="4、执行配置文件，编译，编译安装"><a href="#4、执行配置文件，编译，编译安装" class="headerlink" title="4、执行配置文件，编译，编译安装"></a>4、执行配置文件，编译，编译安装</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> Python-3.7.0./configure --prefix<span class="token operator">=</span>/usr/local/python3<span class="token function">make</span> <span class="token operator">&amp;&amp;</span> <span class="token function">make</span> <span class="token function">install</span></code></pre><p>安装完成没有提示错误便安装成功了</p><h2 id="5、建立软连接"><a href="#5、建立软连接" class="headerlink" title="5、建立软连接"></a>5、建立软连接</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">ln</span> -s /usr/local/python3/bin/python3.7 /usr/bin/python3<span class="token function">ln</span> -s /usr/local/python3/bin/pip3.7 /usr/bin/pip3</code></pre><h2 id="6、测试一下python3是否可以用"><a href="#6、测试一下python3是否可以用" class="headerlink" title="6、测试一下python3是否可以用"></a>6、测试一下python3是否可以用</h2><pre class=" language-bash"><code class="language-bash"><span class="token punctuation">[</span>root@mini Python-3.7.0<span class="token punctuation">]</span><span class="token comment" spellcheck="true"># python3</span>Python 3.7.0<span class="token punctuation">(</span>default, Jul282018,22:47:29<span class="token punctuation">)</span></code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>

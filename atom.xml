@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Faber blog</title>
+  
+  <subtitle>永不言弃</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.baidu.com/"/>
+  <updated>2019-10-11T16:07:17.387Z</updated>
+  <id>http://www.baidu.com/</id>
+  
+  <author>
+    <name>Faber</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>npm镜像源</title>
+    <link href="http://www.baidu.com/2019/10/11/npm/"/>
+    <id>http://www.baidu.com/2019/10/11/npm/</id>
+    <published>2019-10-11T15:25:00.000Z</published>
+    <updated>2019-10-11T16:07:17.387Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h5 id=&quot;1、国内用户，建议将npm的注册表源设置为国内的镜像，可以大幅提升安装速度，先查看本机地址&quot;&gt;&lt;a href=&quot;#1、国内用户，建议将npm的注册表源设置为国内的镜像，可以大幅提升安装速度，先查看本机地址&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="npm" scheme="http://www.baidu.com/tags/npm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>liunx安装升级python3.0</title>
+    <link href="http://www.baidu.com/2019/10/11/python/"/>
+    <id>http://www.baidu.com/2019/10/11/python/</id>
+    <published>2019-10-11T15:25:00.000Z</published>
+    <updated>2019-10-11T15:57:22.183Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1、安装依赖包&quot;&gt;&lt;a href=&quot;#1、安装依赖包&quot; class=&quot;headerlink&quot; title=&quot;1、安装依赖包&quot;&gt;&lt;/a&gt;1、安装依赖包&lt;/h2&gt;&lt;h5
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Python" scheme="http://www.baidu.com/tags/Python/"/>
+    
+  </entry>
+  
+</feed>
